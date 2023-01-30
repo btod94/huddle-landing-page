@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END OF CSS RESET */
+
+*{
+    font-family: Poppins;
+}
+
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    
+}
+
+.heading{
+    padding:3rem;
+    
+}
+
+.content{
+    display:flex;
+    flex-direction: row;
+    padding:0 3rem;
+    
+}
+
+.txt-container{
+    padding:2.5rem 0 0 2rem;
+}
+
+.txt-container > h1{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color:#fff;
+    padding-right:5rem;
+}
+
+.txt-container > p {
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#fff;
+    padding:2rem 0.5rem 2rem 0;
+    
+}
+
+.reg{
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    font-weight:400;
+    color:hsl(257, 40%, 49%);
+    font-size:1rem;
+    border:none;
+}
+
+.reg:hover{
+    background-color: hsl(300, 69%, 71%);
+    color:#fff;
+}
+
+
+.social{
+    color:#fff;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    padding-right:3rem;
+    padding-bottom:1rem;
+    
+}
+
+.social ul{
+    display:flex;
+    gap:1rem;
+}
+
+
+
+.social a{
+    width:1rem;
+    height:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #fff;
+    padding:0.5rem;
+    border-radius:50%;
+    text-align:center;
+    gap:1rem;
+}
+
+li > a{
+    color:#fff;
+} 
+
+
+li>a:hover{
+    border:1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+
+.attribution{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    body{
+    background-image: url("images/bg-mobile.svg");
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+        max-width:800px;
+        box-sizing: border-box;
+        
+    }
+
+    .heading>img{
+        width:40%;
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .img-container{
+        width:100%;
+    }
+
+    .img-container > img{
+        width:100%;
+    }
+
+    .txt-container{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    .txt-container > h1 {
+    padding: 0;
+    margin:1.5rem 0;
+    text-align: center;
+    font-size:1.5rem;
+    line-height:1.5;
+    }
+
+    .txt-container > p{
+        margin-top:-2rem;
+        padding:1.5rem 1.7rem;
+    }
+
+    .social{
+        justify-content: center;
+        padding:0;
+        margin-top:4rem;
+        
+    }
+
+    .reg{
+        padding: 0.5rem 5rem;
+    }
+
+    .attribution{
+        margin-top:1rem;
+        line-height:1rem;
+    }
+
+
+
+
+}
+
